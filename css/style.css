@@ -1101,8 +1101,8 @@ body {
     .section-6-cards{
         justify-content: space-between;
         gap: 25px;
-        flex-wrap: nowrap;
-        overflow-x: auto;
+        /* flex-wrap: nowrap;
+        overflow-x: auto; */
     }
     .section-6-head h2{
         margin: 0 0 24px;
