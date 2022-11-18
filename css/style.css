@@ -1219,7 +1219,9 @@ body {
         height:370px !important;
         overflow: hidden;
     }
-    
+    .sec-7-card{
+      padding:20px;
+    }
     .section-7-head h2{
         margin-left: 0;
     }
