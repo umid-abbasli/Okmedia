@@ -2201,14 +2201,19 @@ input:not(:focus):valid ~ .floating-label */
         /* display: none; */
         transform: translateY(50px);
       }
-      .footer-contact-icons a{
+      .footer-contact-icons ul{
+        display: flex;
+      }
+      .footer-contact-icons ul li a{
         width: 48px;
         height: 48px;
-        display: inline-flex;
+        display: flex;
         border-radius: 18px;
-        flex-direction: column;
         margin-right: 10px;
         text-align: center;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
         overflow: hidden;
         transition: .2s;
       }
@@ -2322,12 +2327,16 @@ input:not(:focus):valid ~ .floating-label */
           }
       }
       @media only screen and (max-width:310px){
-
+        .footer-contact ul{
+          flex-wrap: wrap;
+        }
         .footer-contact-icons a{
             width: 40px;
             height: 40px;
-            display: inline-flex;
-            justify-content: center;
+            display: flex;
+            min-width: 40px;
+            min-height: 40px;
+            /* justify-content: center; */
             align-items: center;
             border-radius: 18px;
             margin-right: 5px;
