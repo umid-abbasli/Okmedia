@@ -1094,7 +1094,7 @@ body {
     }
     .section-6-card{
         width: 40%;
-        min-width: 260px;
+        min-width: 180px;
     }
 }
 @media only screen and (max-width:740px){
