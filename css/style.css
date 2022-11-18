@@ -1745,6 +1745,13 @@ a{
     }
 }
 @media only screen and (max-width:780px){
+  .section-10{
+    padding: 0 0px 56px 0px;
+}
+.section-10-head a{
+  padding: 10px 0;
+  width: 100%;
+}
     /* .section-10-content::-webkit-scrollbar {
         width: 8px;
         height: 6px;
