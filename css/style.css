@@ -48,6 +48,9 @@
 body {
   font-family: "okmediafont-medium", Arial, sans-serif !important ;
 }
+a{
+  cursor: pointer !important;
+}
 .mycontainer{
     max-width: 1310px;
     width: 1310px;
@@ -2225,9 +2228,6 @@ input:not(:focus):valid ~ .floating-label */
         background-color: #FF0000;
         border: 1px solid #FF0000;
       }
-      .fa-facebook-f,.fa-twitter{
-        font-size: 20px !important;
-      }
       .footer-contact-icons a i{
         font-size: 23px;
         color: #fff;
@@ -2242,10 +2242,7 @@ input:not(:focus):valid ~ .floating-label */
         transform: translateY(-60px) !important;
       }
       .animated-icon-footer:hover .facebook-icon-2{
-        transform: translateY(-32px) ;
-      }
-      .animated-icon-footer:hover .facebook-icon-2-2{
-        transform: translateY(-35px) ;
+        transform: translateY(-35px);
       }
       .footer-contact p{
         margin-top: 32px;
