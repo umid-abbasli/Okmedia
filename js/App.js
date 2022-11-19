@@ -39,12 +39,6 @@ $(document).ready(function(){
         if(x>1){
             $(".slider-1-9").css({"visibility":"visible"})
         }
-        else if(x>9){
-            $(".slider-1-9").css({"visibility":"visible"})
-        }
-        if(x>8){
-            x=0;
-        }
         console.log(x);
     })
     $(".swiper-button-prevv").click(function(){
@@ -52,6 +46,8 @@ $(document).ready(function(){
         if(x<=1){
             $(".slider-1-9").css({"visibility":"hidden"})
         }
+    else if (x < 0)
+    $(".slider-1-9").css({"visibility":"visible"})
     })
 
 
