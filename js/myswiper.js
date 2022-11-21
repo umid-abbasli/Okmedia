@@ -4300,6 +4300,7 @@
             "custom" !== e.type && i("paginationRender", t.pagination.$el[0]);
         }
         function h() {
+
           t.params.pagination = F(
             t,
             t.originalParams.pagination,

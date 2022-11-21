@@ -913,6 +913,7 @@ a{
 }
 .slider-1-9{
     visibility: hidden;
+    transition: .15s;
 }
 .swi-img{
     /* padding: 15px; */

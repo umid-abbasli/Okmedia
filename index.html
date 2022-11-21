@@ -429,7 +429,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide slider-1-9">
+                        <div class="swiper-slide slider-1-9" id="hidden-slide">
                             <div class="swi-all-photo">
                                 <div class="swi-photo-bg">
                                     <div class="swi-img">
@@ -1265,7 +1265,9 @@
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1.5,
             spaceBetween: 40,
-            loop: true,
+            watchSlidesProgress:true,
+            slidesPerView:1,
+            loop:true,
             navigation: {
                 nextEl: ".swiper-button-nextt",
                 prevEl: ".swiper-button-prevv",
@@ -1298,6 +1300,19 @@
                 type: 'fraction',
             },
         });
+        swiper.on('slideChange', function () {
+            console.log($(".swiper-pagination-current").html());
+            if($(".swiper-pagination-current").html() === "8"){
+                $(".slider-1-9").css({"visibility":"visible"})
+            }
+            else if($(".swiper-pagination-current").html() === "9"){
+                $(".slider-1-9").css({"visibility":"visible"})
+            }
+            else{
+                $(".slider-1-9").css({"visibility":"hidden"})
+            }
+            
+  });
         let appendNumber = 9;
         let prependNumber = 1;
     </script>

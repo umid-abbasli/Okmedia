@@ -33,26 +33,38 @@ $(document).ready(function(){
             $(this).addClass("section-5-button-bg").siblings().removeClass("section-5-button-bg");
         });
     })
-    let x = 0;
-    $(".swiper-button-nextt").click(function(){
-        x++;
-        if(x>1){
-            $(".slider-1-9").css({"visibility":"visible"})
-        }
-        console.log(x);
-    })
-    $(".swiper-button-prevv").click(function(){
-        x--;
-        if(x<=1){
-            $(".slider-1-9").css({"visibility":"hidden"})
-        }
-    else if (x < 0)
-    $(".slider-1-9").css({"visibility":"visible"})
-    })
+//     let x = 0;
+//     $(".swiper-button-nextt").click(function(){
+//         x++;
+//         if(x>0){
+//             $(".slider-1-9").css({"visibility":"visible"})
+//         }
+//         else if(x === 0 ){
+//             $(".slider-1-9").css({"visibility":"hidden"})
+//         }
+//         else{
+//             $(".slider-1-9").css({"visibility":"hidden"})
+//         }
+//         console.log(x);
+        
+//     })
+//     $(".swiper-button-prevv").click(function(){
+//         x--;
+//         if(x<=1){ 
+//     $(".slider-1-9").css({"visibility":"visible"})
+//         }
+//     else if (x === 0){
+//     $(".slider-1-9").css({"visibility":"hidden"})
+//     console.log(x);
+//     }
+//     })
 
-
-
+// console.log($(".mySwiper".length));
+    // 
+   
 });
+ 
+
     
 // let myinput = document.getElementById("call-back-input")
 // let myinputname = document.getElementById("call-back-input-name")
