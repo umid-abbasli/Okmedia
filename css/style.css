@@ -2267,7 +2267,7 @@ input:not(:focus):valid ~ .floating-label */
       }
       .footer-link-2{
         margin-top: 32px;
-        font-family: Lato,sans-serif;
+        font-family: "okmediafont-regular";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -2298,7 +2298,7 @@ input:not(:focus):valid ~ .floating-label */
       }
       @media only screen and (max-width:768px){
         .footer{
-            padding-bottom: 0;
+            padding-bottom: 30px;
         }
         .footer-head a h3{
             font-size: 18px;

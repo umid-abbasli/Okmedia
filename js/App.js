@@ -33,6 +33,7 @@ $(document).ready(function(){
             $(this).addClass("section-5-button-bg").siblings().removeClass("section-5-button-bg");
         });
     })
+    
 //     let x = 0;
 //     $(".swiper-button-nextt").click(function(){
 //         x++;
