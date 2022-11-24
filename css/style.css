@@ -435,7 +435,7 @@ a{
   .section-1-head h2{
     font-style: normal;
     font-weight: 900;
-    font-size: 48px;
+    font-size: 64px;
     line-height: 82px;
     padding-top: 100px;
     margin-bottom: 24px;
@@ -478,12 +478,15 @@ a{
     display: inline-flex;
     align-items: center;
     flex: 0 1 auto;
-    height: 60px;
+    height: 100%;
+    min-width: 200px;
+    min-height: 60px;
     justify-content: center;
   }
   .section-1-card a img{
     object-fit: contain;
-    width: 60%;
+    /* width: 60%; */
+    max-width: 110px;
   }
 .card-tr-bg{
     background-color: transparent;
@@ -509,7 +512,6 @@ a{
     transform: rotate(1.5deg);
 }
 .rt-3{
-    background: #000;
     transform: rotate(-1.5deg);
 }
 .rt-4{
@@ -566,9 +568,9 @@ a{
         width: 100%;
     }
     .section-1-card a{
-        width: 140px;
+        min-width: 140px;
         max-width: 165px;
-        height: 40px;
+        min-height: 40px;
     }
     .section-1-card a img{
         width: 100%;
@@ -599,14 +601,17 @@ a{
     content: "";
 }
 .section-2-cards{
-    margin: 45px auto 0 ;
+    margin: 45px auto 45px ;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 2;
     width: 1150px;
 }
 .section-2-card{
     width: 230px;
     margin: 28px 25px;
+    /* text-align: center; */
 }
 .section-2-card-img {
     width: 78px;
@@ -616,6 +621,7 @@ a{
     justify-content: center;
     background: url("../img/ok-sec-2.svg");
     margin: 0 16px 24px 0;
+    /* margin: 0 auto 24px; */
     
 }
 .section-2-card-img img{
@@ -624,12 +630,12 @@ a{
     object-fit: contain;
 }
 .section-2-card-content h2{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    margin-bottom: 20px;
-    font-family: "okmediafont-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  font-family: "okmediafont-bold";
 }
 .section-2-card-content p{
     font-style: normal;
@@ -655,7 +661,7 @@ a{
     .section-2-card{
         display: flex;
         align-items: center;
-        width: 480px;
+        width: 49%;
     }
     .section-2-card-img {
         background-repeat: no-repeat;
@@ -798,15 +804,15 @@ a{
 .section-4-card-img img{
     height: 108px;
     max-width: 100%;
-    margin: -50px 0 0 0;
+    margin: -73px 0 0 0;
 }
 .section-4-card-content{
     padding-top: 40px;
 }
 .section-4-card-content h2{
-    margin-bottom: 8px;
-    font-size: 24px;
-    font-family: "okmediafont-regular";
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-family: "okmediafont-medium";
 }
 .section-4-card-content p{
     font:15px "okmediafont-regular";
@@ -1481,7 +1487,7 @@ a{
   }
   .sec-9-card-2-4{
     width: 100%;
-    margin-top: -70px;
+    /* margin-top: -70px; */
   }
   .sec-9-card-2-1{
     width: 80%;
@@ -1579,7 +1585,7 @@ a{
         justify-content: space-evenly;
     }
     .sec-9-m-t{
-        margin-top: 20px;
+        margin-top: 0px;
       }
       .sec-9-m-b{
         margin-bottom: 25px;
