@@ -467,7 +467,7 @@ a{
   .section-1-content{
     display: flex;
     justify-content: center;
-    max-width: 850px;
+    max-width: 1050px;
     margin: 0 auto;
     flex-wrap: wrap;
     align-items: center;
@@ -2143,12 +2143,12 @@ input:not(:focus):valid ~ .floating-label */
         padding-bottom:50px ;
       }
       .footer-content{
-        padding: 90px 0 0 0;
+        padding: 90px 0 30px 0px;
         width: 100%;
         margin: 0 auto;
       }
       .footer-head a{
-        display: flex;
+        display: block;
         flex-wrap: wrap;
         padding-bottom: 32px;
         font-family: "okmediafont-bold";
@@ -2166,7 +2166,8 @@ input:not(:focus):valid ~ .floating-label */
       }
       .footer-head a h3{
         font-size: 28px;
-        margin-left: 10px;
+        /* margin-left: 0px; */
+        margin: 20px 0 0 0;
         line-height: 29px;
         color: rgba(255,255,255,.5);
         padding: 0;
@@ -2248,16 +2249,16 @@ input:not(:focus):valid ~ .floating-label */
         border:1px solid #3B5998;
       }
       .footer-icon-2{
-        background-color: #1DA1F2;
-        border: 1px solid #1DA1F2;
+        background-color: #00055f;
+        border: 1px solid #00055f;
       }
       .footer-icon-3{
         background-color: #5851DB;
         border: 1px solid #5851DB;
       }
       .footer-icon-4{
-        background-color: #FF0000;
-        border: 1px solid #FF0000;
+        background-color: #009be9;
+        border: 1px solid #009be9;
       }
       .footer-contact-icons a i{
         font-size: 23px;
