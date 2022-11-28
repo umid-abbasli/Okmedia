@@ -927,6 +927,15 @@ a{
     visibility: hidden;
     transition: .15s;
 }
+.okmedia-search-bar{
+  position: absolute;
+  top: -5px;
+  width: 100% !important;
+  height: 35px !important;
+  object-fit: contain;
+  /* left: 20%; */
+  z-index: 11;
+}
 .swi-img{
     /* padding: 15px; */
     overflow: hidden;
