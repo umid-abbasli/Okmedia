@@ -249,7 +249,7 @@
                 <div class="section-4-cards">
                     <a href="" data-aos="fade-up" class="section-4-card-1">
                         <div class="section-4-card-img">
-                            <img src="https://gb.ru/courses/assets/courses-all/62b1aad855f3da8801c375d4_il_way_it.svg"
+                            <img src="/img/okmedia-layiheler.png"
                                 alt="">
                         </div>
                         <div class="section-4-card-content">
@@ -259,7 +259,7 @@
                     </a>
                     <a href="" data-aos="fade-up" class="section-4-card-2">
                         <div class="section-4-card-img">
-                            <img src="https://gb.ru/courses/assets/courses-all/62b4270770c5b845ec6c2a6a_bayc.png"
+                            <img src="/img/okmedia-layiheler-2.png"
                                 alt="">
                         </div>
                         <div class="section-4-card-content">
@@ -269,7 +269,7 @@
                     </a>
                     <a href="" data-aos="fade-up" class="section-4-card-1">
                         <div class="section-4-card-img">
-                            <img src="https://gb.ru/courses/assets/courses-all/62b1aad855f3da8801c375d4_il_way_it.svg"
+                            <img src="/img/okmedia-layiheler-3.png"
                                 alt="">
                         </div>
                         <div class="section-4-card-content">
@@ -279,7 +279,7 @@
                     </a>
                     <a href="" data-aos="fade-up" class="section-4-card-2">
                         <div class="section-4-card-img">
-                            <img src="https://gb.ru/courses/assets/courses-all/62b4270770c5b845ec6c2a6a_bayc.png"
+                            <img src="/img/la-removebg-preview.png"
                                 alt="">
                         </div>
                         <div class="section-4-card-content">
@@ -303,12 +303,13 @@
                     <div class="section-5-buttons">
                         <ul data-aos="fade-up">
                             <li class="section-5-button-bg">lorem</li>
-                            <li>consecteturadip</li>
-                            <li>dolotetur</li>
-                            <li>sit</li>
-                            <li>amentconse</li>
-                            <li>quasi</li>
+                            <li class="tibb">consecteturadip</li>
+                            <li class="insaat">dolotetur</li>
+                            <li class="bankciliq">sit</li>
+                            <li class="perakende">amentconse</li>
+                            <li class="diger">quasi</li>
                             <li>consectetur</li>
+                            <div class="swiper-paginationn"></div>
                         </ul>
                     </div>
                     <div data-aos="fade-up" class="section-5-buttons-2">
@@ -1297,6 +1298,12 @@
                 type: 'fraction',
             },
         });
+        document
+      .querySelector('.tibb')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.slideTo(8, 0);
+      });
         swiper.on('slideChange', function () {
             console.log($(".swiper-pagination-current").html());
             if ($(".swiper-pagination-current").html() === "8") {
@@ -1310,8 +1317,10 @@
             }
 
         });
+        
         let appendNumber = 9;
         let prependNumber = 1;
+        
     </script>
     <script type="text/javascript">
         var btn = document.querySelectorAll('.mouse-cursor-gradient-tracking')

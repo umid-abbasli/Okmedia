@@ -63,6 +63,10 @@ $(document).ready(function(){
 // console.log($(".mySwiper".length));
     // 
    
+
+
+
+
 });
  
 
