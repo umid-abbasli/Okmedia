@@ -1808,7 +1808,7 @@ a{
         border-radius: 20px;
     }
 }
-@media only screen and (max-width:780px){
+@media only screen and (max-width:1050px){
   .section-10{
     padding: 0 0px 56px 0px;
 }
@@ -2117,7 +2117,7 @@ a{
         top: 20px;
         left: 16px;
         color: var(--text-main-color);
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1;
         opacity: 0.5;
         -webkit-transition: all .2s ease-in-out;
@@ -2125,7 +2125,7 @@ a{
         pointer-events: none;
     }
     .ui-field__input:focus-visible {
-        border-color: var(--stroke-secondary-color);
+        border-color: #d4d4dd;
         background-color: var(--bg-main-color);
         outline: 0;
     }
@@ -2137,6 +2137,8 @@ input:not(:focus):valid ~ .floating-label */
   top: 4px;
   font-size: 13px;
   opacity: 1;
+  left: 20px;
+  color: #cecece;
 }
      .textarea-w100{
         width: 100% !important;
@@ -2266,7 +2268,7 @@ input:not(:focus):valid ~ .floating-label */
         margin: 0px 15px 15px 0;
         text-align: start;
       }
-      .footer-list ul li a:hover{
+      .hovered-footer:hover{
         opacity: 0.4;
       }
       .footer-list-head{
