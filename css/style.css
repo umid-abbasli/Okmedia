@@ -928,6 +928,7 @@ a{
     width: 100%;
     height: 600px;
     padding: 30px;
+    overflow: hidden;
 }
 .swi-photo-bg{
     width: 100%;
@@ -953,6 +954,9 @@ a{
   object-fit:cover !important;
   /* left: 20%; */
   z-index: 11;
+  min-height: 34px !important;
+  max-height: 36px !important;
+
 }
 .swi-img{
     /* padding: 15px; */
@@ -971,6 +975,10 @@ a{
     /* padding: 15px; */
     border-radius: 8px;
     height: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px ;
+    /* padding-top: 35px; */
+    /* margin-top: 35px; */
 }
 .swi-img a{
     position: absolute;
