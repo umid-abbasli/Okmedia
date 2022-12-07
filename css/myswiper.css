@@ -52,6 +52,16 @@
     transition-property: transform;
     box-sizing: content-box;
   }
+  @media only screen and (max-width:1300px){
+    .swiper-wrapper {
+      margin: 0 0 0 7.1%;
+    }
+  }
+  @media only screen and (max-width:1200px){
+    .swiper-wrapper {
+      margin: 0 0 0 7.4%;
+    }
+  }
   @media only screen and (max-width:800px){
     .swiperr-wrapper {
       margin: 0 0px;
@@ -724,7 +734,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    top: 24px;
+    /* top: 24px; */
   }
 
   .swiper-slide {
