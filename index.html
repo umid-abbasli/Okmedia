@@ -1090,13 +1090,14 @@
                                             <span class="ui-field__name"> Adınız və soyadınız : </span> </label>
                                     </li>
                                     <li data-aos="fade-up">
-                                        <label class="ui-field__label"> <input class=" ui-field__input  " data-inputmask="'mask': '99-9999999'"  type="text"
+                                        <label class="ui-field__label"> <input class=" ui-field__input" value="+994" data-inputmask="'mask': '99-9999999'"  type="tel"
                                                 name="phone" required="di" id="a" oninvalid="this.setCustomValidity('Xahiş edirik düzgün əlaqə nömrəsi qeyd edəsiniz')" minlength="11" maxlength="15" 
                                                 >
                                                 <!-- pattern="^[+()]*[0-9][- +()0-9]*$" -->
                                                 <script>
                                                     $(document).ready(function(){
-                                                      $("#a").mask("(999) 99-999-99-99");
+                                                      $("#a").mask("+(999) 99-999-99-99");
+                                                      $.mask.definitions['~']='[+-]';
                                                     })
                                                   </script>
                                             <span class="ui-field__name"> Əlaqə nömrəniz :</span> </label>
