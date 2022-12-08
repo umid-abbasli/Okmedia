@@ -4276,7 +4276,7 @@ fieldset:disabled .btn {
 }
 .accordion-button:not(.collapsed)::after {
   background-image: var(--bs-accordion-btn-active-icon);
-  transform: var(--bs-accordion-btn-icon-transform);
+  transform: rotateZ(360deg);
 }
 .accordion-button::after {
   flex-shrink: 0;
@@ -4288,6 +4288,9 @@ fieldset:disabled .btn {
   background-repeat: no-repeat;
   background-size: var(--bs-accordion-btn-icon-width);
   transition: var(--bs-accordion-btn-icon-transition);
+}
+.accordion-button::after{
+  transform: rotateZ(270deg);
 }
 @media (prefers-reduced-motion: reduce) {
   .accordion-button::after {

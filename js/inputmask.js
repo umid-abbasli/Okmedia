@@ -10,7 +10,7 @@
     var caretTimeoutId, ua = navigator.userAgent, iPhone = /iphone/i.test(ua), chrome = /chrome/i.test(ua), android = /android/i.test(ua);
     $.mask = {
         definitions: {
-            "9": "[0-9]",
+            "8": "[0-9]",
             a: "[A-Za-z]",
             "*": "[A-Za-z0-9]"
         },

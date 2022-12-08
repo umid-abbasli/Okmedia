@@ -34,52 +34,19 @@ $(document).ready(function(){
         });
     })
     document.getElementById
-//     let x = 0;
-//     $(".swiper-button-nextt").click(function(){
-//         x++;
-//         if(x>0){
-//             $(".slider-1-9").css({"visibility":"visible"})
-//         }
-//         else if(x === 0 ){
-//             $(".slider-1-9").css({"visibility":"hidden"})
-//         }
-//         else{
-//             $(".slider-1-9").css({"visibility":"hidden"})
-//         }
-//         console.log(x);
-        
-//     })
-//     $(".swiper-button-prevv").click(function(){
-//         x--;
-//         if(x<=1){ 
-//     $(".slider-1-9").css({"visibility":"visible"})
-//         }
-//     else if (x === 0){
-//     $(".slider-1-9").css({"visibility":"hidden"})
-//     console.log(x);
-//     }
-//     })
-
-// console.log($(".mySwiper".length));
-    // 
-   
 
 
 
 
-});
- 
+    // input mask
+    $("#a").mask("+994 ( 88 ) 888 - 88 - 88")
+
+
+
 
     
-// let myinput = document.getElementById("call-back-input")
-// let myinputname = document.getElementById("call-back-input-name")
-// if(myinput.value > 0){
-//     myinputname.style.transform = "translateY(-95%)"
-//     console.log(myinput.value);
-// }
-// function ok(){
-//     console.log(myinput.value);
-// }
+});
+
 
 
  

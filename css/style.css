@@ -16,35 +16,6 @@
     src: url(../font/Gilroy-Regular.woff2);
     font-weight: 500;
   }
-  
-/* .section-5::-webkit-scrollbar {
-    width: 18px;
-    
-    background: linear-gradient(76.7deg,#986ad0 0,#1c9de7 100%);
-}
-.section-5::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 10px rgba(33, 26, 26, 0.9);
-}
-.section-5::-webkit-scrollbar-thumb {
-  background-color: rgb(64, 63, 64);
-  border-radius: 15px;
-  border: 1px solid #fff;
-  outline: 1px solid rgba(112, 128, 144, 0);
-} */
-
-
-/* .section-5-all-head::-webkit-scrollbar {
-    display: none; 
-} */
-/* .section-5-buttons ul {
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
-    overflow-y: scroll; 
-}
-
-.section-5-buttons ul::-webkit-scrollbar {
-    display: none; 
-} */
 body {
   font-family: "okmediafont-medium", Arial, sans-serif !important ;
 }
@@ -202,7 +173,7 @@ a{
 }
 #nav-icon1 {
   width: 20px;
-  height: 14px;
+  height: 20px;
   position: relative;
   margin: 0 auto;
   -webkit-transform: rotate(0deg);
@@ -219,7 +190,7 @@ a{
 #nav-icon1 span {
   display: block;
   position: absolute;
-  height: 2px;
+  height: 1px;
   width: 100%;
   background: #000;
   border-radius: 9px;
@@ -233,6 +204,7 @@ a{
   -moz-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
+  overflow: hidden;
 }
 
 #nav-icon1 span:nth-child(1) {
@@ -245,27 +217,19 @@ a{
 
 #nav-icon1 span:nth-child(3) {
   top: 16px;
+  width: 60%;
 }
 
 #nav-icon1.open span:nth-child(1) {
-  top: 7px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
+    opacity: 0.3;
 }
 
 #nav-icon1.open span:nth-child(2) {
-  opacity: 0;
-  left: -60px;
+  opacity: 0.3;
 }
 
 #nav-icon1.open span:nth-child(3) {
-  top: 7px;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+  opacity: 0.3;
 }
 /* hamburger menu end  */
 /* hamburger content */
@@ -304,7 +268,7 @@ a{
     .nav {
       display: none;
     }
-    .navbar-2 {
+    .nav-elaqe {
       display: none;
     }
     .hamburger-menu {
@@ -319,12 +283,16 @@ a{
       position: fixed;
       z-index: 3;
       background-color: #fff;
+      align-items: center;
       width: 100%;
       padding: 29px 25px;
       box-shadow: 0 2px 25px rgb(0 0 0 / 5%);
     }
     .all-section-with-hamburger {
       position: relative;
+    }
+    .logo {
+      margin: 0 0 0 30%;
     }
     .hamburger-content {
       position: fixed;
@@ -347,6 +315,7 @@ a{
       font-weight: 600;
       transition: all 0.2s;
       font-size: 16px;
+      margin: 15px 0;
       cursor: pointer;
       display: inline-block;
       width: 100%;
@@ -368,6 +337,9 @@ a{
     .accordion-body li a {
       font-size: 20px;
       color: #000;
+    }
+    .accordion-a{
+      margin-left: 25px;
     }
     .hamburger-content ul li button {
       font-size: 20px;
@@ -553,7 +525,7 @@ a{
         justify-content: center;
         max-width: 850px;
         margin: 0 auto;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         align-items: center;
         gap: 20px;
       }
@@ -563,7 +535,9 @@ a{
         padding: 60px 0 0 0;
       }
     .section-1{
-    padding-top: 93px;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    padding: 93px 0 65px 0;
     }
     .section-1-all-content{
         max-width: 435px;
@@ -571,28 +545,47 @@ a{
         padding: 0 15px 14px 15px;
     }
     .section-1-head h2{
-        font-size: 32px;
+        font-size: 36px;
         line-height: 39px;
         padding-top: 40px;
     }
     .section-1-head p{
-        font-size: 18px;
+        font-size: 17px;
         max-width: 100%;
         width: 100%;
+        margin: 0 0 30px 0;
     }
    
     .section-1-content{
         gap: 12px;
         width: 100%;
+        flex-wrap: wrap-reverse;
+    }
+    .imgs-5{
+      gap: 10px;
+      width: 400px;
+    }
+    .imgs-3{
+      gap: 2px;
+    }
+    .img-3  .section-1-card a{
+      min-height: 105px;
     }
     .section-1-card a{
-        min-width: 140px;
-        max-width: 165px;
-        min-height: 40px;
+        min-width: 90px;
+        max-width: 96px;
+        /* min-height: 40px; */
     }
     .section-1-card a img{
         width: 100%;
+        max-height: 60px;
     }
+}
+@media only screen and (max-width:420px){
+  .imgs-5{
+    gap: 10px;
+    width: 335px;
+  }
 }
 @media only screen and (max-width:350px){
     .section-1-all-content{
@@ -672,6 +665,7 @@ a{
 @media only screen and (max-width:877px){
     .section-2{
         /* width: 540px; */
+        padding: 0;
     }
     .section-2-cards{
         margin: 0 auto;
@@ -865,7 +859,7 @@ a{
     padding: 0 0px 0px 0px;
 }
 .section-5-all-head{
-    margin-left: 27px;
+    /* margin-left: 27px; */
 }
 .section-5-head h2{
     max-width: 800px;
@@ -921,71 +915,10 @@ a{
 .centered-slide{
     text-align: center !important;
 }
-/* .swi-photo-bg{
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px ;
-    border-radius: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 .slider-1-9{
     visibility: hidden;
     transition: .15s;
 }
-/* .okmedia-search-bar{
-  position: absolute;
-  top: -5px !important;
-  width: 100% !important;
-  height: 35px !important;
-  object-fit:cover !important;
-  z-index: 11;
-  min-height: 34px !important;
-  max-height: 36px !important;
-
-} */
-/* .swi-img{
-    border-radius: 8px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-.swi-photo{
-    position: absolute;
-    z-index: 1;
-    border-radius: 8px;
-    height: 100%;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px ;
-}
-.swi-img a{
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-size: 14px;
-    line-height: 16px;
-    z-index: 3;
-    color: #fff;
-    background-color: #00000085;
-    display: flex;
-    transition: .3s;
-}
-.swi-img a img{
-    width: 18px;
-    margin-left: 10px;
-}
-
-.swi-img a:hover{
-    background: rgb(58, 58, 58);
-    color: #fff;
-    border-color: rgb(56, 56, 56);
-} */
 .swi-all-photo{
   display: flex;
   justify-content: center;
@@ -1055,6 +988,10 @@ a{
   .okmedia-search-bar{
     object-fit:cover !important;
   }
+  .section-5-buttons{
+    margin: 30px 30px 0 30px ;
+    gap: 15px;
+}
 }
 @media only screen and (max-width:800px){
     .section-5-buttons ul {
@@ -1075,6 +1012,15 @@ a{
         font-size: 25px;
         margin: 15px 0;
     }
+    .section-5-buttons ul li,.item {
+      background-color: #fff;
+      padding: 11px 0px !important;
+      white-space: nowrap;
+      cursor: pointer;
+      color: #000 ;
+      text-align: center;
+      font-size: 14px;
+  }
     .owl-nav{
         display: none;
     }
@@ -1857,7 +1803,7 @@ a{
 }
 .section-10-head a{
   padding: 10px 0;
-  width: 100%;
+  width: 180px;
 }
     /* .section-10-content::-webkit-scrollbar {
         width: 8px;
@@ -2054,6 +2000,7 @@ a{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 10px;
         }
         .section-11-cards button{
             width: 26%;
@@ -2094,6 +2041,7 @@ a{
         font-size: 32px;
         line-height: 40px;
         font-family: "okmediafont-bold";
+        text-align: left;
       }
       .section-12-card-1 p{
         color: #d0d0d0;
@@ -2311,8 +2259,11 @@ input:not(:focus):valid ~ .floating-label */
         margin: 0px 15px 15px 0;
         text-align: start;
       }
+      .hovered-footer{
+        opacity: 0.7 !important;
+      }
       .hovered-footer:hover{
-        opacity: 0.4;
+        opacity: 0.4 !important;
       }
       .footer-list-head{
         font-weight: 900;
@@ -2336,6 +2287,9 @@ input:not(:focus):valid ~ .floating-label */
         cursor: pointer;
         /* transition: .1s; */
         border-radius: 12px;
+        opacity: 1;
+      }
+      .footer-list ul li a:hover{
         opacity: 0.7;
       }
       .footer-contact-all{
