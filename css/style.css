@@ -16,6 +16,7 @@
     src: url(../font/Gilroy-Regular.woff2);
     font-weight: 500;
   }
+
 body {
   font-family: "okmediafont-medium", Arial, sans-serif !important ;
 }
@@ -821,7 +822,7 @@ a{
 .section-4-card-content{
     padding-top: 40px;
 }
-.section-4-card-content h2{
+.section-4-card-content h1{
   margin-bottom: 8px;
   font-size: 24px;
   font-family: "okmediafont-medium";
@@ -935,9 +936,10 @@ a{
   position: relative;
 }
 .swi-bar{
-  height: 20px;
+  height: 31px;
   width: 100%;
   background: url("../img/search-bar-okmedia.svg") center/contain no-repeat;
+  background-size: 100%;
 }
 .swi-all a{
   position: absolute;
@@ -989,7 +991,7 @@ a{
     object-fit:cover !important;
   }
   .section-5-buttons{
-    margin: 30px 30px 0 30px ;
+    margin: 30px 30px 0 0px ;
     gap: 15px;
 }
 }
@@ -1011,6 +1013,7 @@ a{
     .section-5-head h2{
         font-size: 25px;
         margin: 15px 0;
+        /* padding: 0 20px; */
     }
     .section-5-buttons ul li,.item {
       background-color: #fff;
@@ -1031,6 +1034,15 @@ a{
 @media only screen and (max-width:650px){
   .okmedia-search-bar{
     object-fit:contain !important;
+  }
+  .swi-bar{
+    height: 14px;
+  }
+  .swi-photo{
+    height: 100%;
+  }
+  .swi-photo img{
+    object-fit: cover;
   }
 }
 @media only screen and (max-width:540px){
@@ -1062,8 +1074,10 @@ a{
 }
 .section-6-head h2{
     margin: 0 0 24px;
-    max-width: 1076px;
-    font-size: 64px;
+    max-width: 1076px; 
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
 }
 .section-6-head p{
     font-size: 24px;
@@ -1163,6 +1177,7 @@ a{
         margin: 0 0 24px;
         max-width: 1076px;
         font-size: 25px;
+        line-height: 30px;
     }
     .section-6-head p{
         font-size: 17px;
@@ -1417,6 +1432,8 @@ a{
     }
     .section-8-left-side-cards{
         display: flex;
+        width: 90%;
+        margin: 0 auto;
     }
     .section-8-left-side-card{
         width: 47%;
@@ -1465,9 +1482,11 @@ a{
     margin-bottom: 64px;
 }
 .section-9-head h2{
-    font-size: 60px;
-    max-width: 1076px;
-    line-height: 1.3em;
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 700;
+  max-width: 1076px;
+  line-height: 1.3em;
 }
 .section-9-cards{
     display: flex;
@@ -1496,76 +1515,76 @@ a{
     width: 68%;
     border-radius: 20px;
     background-color: rgb(231, 237, 251);
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     padding: 20px 40px;
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
+    gap: 15px ;
+    row-gap: 50px;
+    justify-content: space-around;
+    /* flex-wrap: wrap-reverse; */
+    /* justify-content: space-between; */
     /* position: relative; */
 }
-.section-9-card-2 img{
-    object-fit: contain;
-    /* margin: 30px; */
-    /* margin: auto; */
-    /* position: absolute; */
-    /* width: 25%; */
+.grid-img,.grid-img-1,.grid-img-2{
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
-.section-9-card-2 ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 90px 17px 0 17px;
-  }
-  .w100-sec-9{
-    width: 100%;
-  }
-  .section-9-card-2 ul li{
-    width: 140px;
-    height: 140px;
-    text-align: center;
-  }
-  .sec-9-card-2-7{
-    width: 100%;
-  }
-  .sec-9-card-2-3{
-    width: 70%;
-  }
-  .sec-9-card-2-4{
-    width: 100%;
-    /* margin-top: -70px; */
-  }
-  .sec-9-card-2-1{
-    width: 80%;
-  }
+.grid-item{
+  max-width: 170px;
+}
+.grid-img{
+  height: 160px;
+  width: 160px;
+  border: 1px solid blue;
+}
+.grid-img-1{
+  height: 110px;
+  width: 110px;
+  border: 1px solid rgb(255, 0, 0);
+}
+.grid-img-2{
+  height: 130px;
+  width: 130px;
+  border: 1px solid rgb(225, 255, 0);
+}
+.grid-img img,.grid-img-1 img,.grid-img-2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
   .sec-9-m-t{
-    margin-top: -80px;
+    margin-top: 30px;
   }
-  .sec-9-m-b{
-    margin-bottom: -75px;
+  .sec-9-mt-2{
+    margin-top: 30px;
   }
 /* section 9 responsive */
-@media only screen and (max-width:1320px){
-    .section-9-card-2{
-        min-height: 451px;
-        width: 68%;
-        border-radius: 20px;
-        background-color: rgb(231, 237, 251);
-        display: flex;
-        padding: 20px 40px;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        /* position: relative; */
-    }
-    .section-9-card-2 ul{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 30px 0 0 0;
-      }
-    .sec-9-m-t{
-        margin-top: 20px;
-      }
-      .sec-9-m-b{
-        margin-bottom: 35px;
-      }
+@media only screen and (max-width:1350px){
+  .section-9-card-2{
+    min-height: 451px;
+    width: 68%;
+    border-radius: 20px;
+    padding: 20px 40px;
+    gap: 15px;
+    grid-template-columns: auto auto auto auto;
+}
+.grid-item{
+  min-width: 150px;
+}
+.grid-img{
+  height: 140px;
+  width: 140px;
+}
+.grid-img-1{
+  height: 90px;
+  width: 90px;
+}
+.grid-img-2{
+  height: 110px;
+  width: 110px;
+}
 }
 @media only screen and (max-width:1100px){
     .section-9{
@@ -1589,21 +1608,29 @@ a{
         min-height: 451px;
         width: 68%;
         border-radius: 20px;
-        background-color: rgb(231, 237, 251);
-        display: flex;
         padding: 20px 40px;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        /* position: relative; */
+        gap: 10px;
+        grid-template-columns: auto auto auto auto;
     }
-    .section-9-card-2 ul li{
-        margin: 10px 0 0 0;
-      }
+    .grid-item{
+      min-width: 130px;
+      display: flex;
+      justify-content: center;
+    }
+    .grid-img{
+      height: 120px;
+      width: 120px;
+    }
+    .grid-img-1{
+      height: 80px;
+      width: 80px;
+    }
+    .grid-img-2{
+      height: 100px;
+      width: 100px;
+    }
     .sec-9-m-t{
         margin-top: 5px;
-      }
-      .sec-9-m-b{
-        margin-bottom: 5px;
       }
 }
 @media only screen and (max-width:992px){
@@ -1621,25 +1648,44 @@ a{
     .section-9-card-2{
         width: 100%;
         padding: 20px;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .section-9-card-2 ul{
-        justify-content: space-evenly;
+        gap: 10px;
     }
     .sec-9-m-t{
         margin-top: 0px;
       }
-      .sec-9-m-b{
-        margin-bottom: 25px;
-      }
-      
-      .sec-9-card-2-4{
-        margin-top: 0;
-      }
 }
-@media only screen and (max-width:560px){
+@media only screen and (max-width:740px){
+  .section-9-card-2{
+    min-height: 451px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px 40px;
+    gap: 15px;
+    grid-template-columns: auto auto auto  ;
+}
+.grid-item{
+  min-width: 130px;
+}
+.grid-img{
+  height: 120px;
+  width: 120px;
+}
+.grid-img-1{
+  height: 80px;
+  width: 80px;
+}
+.grid-img-2{
+  height: 100px;
+  width: 100px;
+}
+.sec-9-m-t{
+    margin-top: 5px;
+  }
+  .sec-9-mt-2{
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width:600px){
     .section-9-cards{
         display: inherit;
     }
@@ -1652,27 +1698,105 @@ a{
         margin: 20px 0;
     }
     .section-9-card-2{
-        padding: 18px;
-        flex-wrap: wrap-reverse;
-        flex-direction: column-reverse;
+      min-height: 451px;
+      width: 100%;
+      border-radius: 20px;
+      padding: 18px;
+      gap: 15px;
+      grid-template-columns: auto auto auto  ;
+      justify-content: space-evenly;
+  }
+  .grid-item{
+    min-width: 100px;
+  }
+  .grid-img{
+    height: 90px;
+    width: 90px;
+  }
+  .grid-img-1{
+    height: 80px;
+    width: 80px;
+  }
+  .grid-img-2{
+    height: 70px;
+    width: 70px;
+  }
+  .sec-9-m-t{
+      margin-top: 5px;
+    }
+    .sec-9-mt-2{
+      margin-top: 30px;
     }
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:490px){
     .section-9-head h2{
         text-align: left;
         font-size: 24px;
         line-height: 32px;
         margin-bottom: 15px;
     }
-    .sec-9-m-t{
-        margin-top: 0px;
-      }
-      .sec-9-m-b{
-        margin-bottom: -30px;
-      }
-      .sec-9-card-2-4{
-        margin-top: 0;
-      }
+    .section-9-card-2{
+      min-height: 451px;
+      width: 100%;
+      border-radius: 20px;
+      padding: 18px;
+      gap: 15px;
+      grid-template-columns: auto auto   ;
+      justify-content: space-evenly;
+  }
+  .grid-item{
+    max-width: 120px;
+  }
+  .grid-img{
+    height: 120px;
+    width: 120px;
+  }
+  .grid-img-1{
+    height: 110px;
+    width: 110px;
+  }
+  .grid-img-2{
+    height: 90px;
+    width: 90px;
+  }
+  .sec-9-m-t{
+      margin-top: 5px;
+    }
+    .sec-9-mt-2{
+      margin-top: 30px;
+    }
+}
+@media only screen and (max-width:390px){
+  .section-9-card-2{
+    min-height: 451px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 18px;
+    gap: 30px;
+    grid-template-columns: auto  ;
+    justify-content: space-evenly;
+}
+.grid-item{
+  min-width: 140px;
+}
+.grid-img{
+  height: 130px;
+  width: 130px;
+}
+.grid-img-1{
+  height: 120px;
+  width: 120px;
+}
+.grid-img-2{
+  height: 110px;
+  width: 110px;
+}
+.sec-9-m-t{
+    margin-top: 5px;
+  }
+  .sec-9-mt-2{
+    margin-top: 30px;
+  }
 }
 /* section 9 end */
 .section-10{
@@ -1687,6 +1811,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 0 20px 0;
     flex-wrap: wrap;
 }
 
@@ -1846,6 +1971,13 @@ a{
     .section-10-content-2-top{
         display: block;
         margin: 20px 30px;
+        padding: 0;
+    }
+    .section-10-content-2{
+      display: none;
+    }
+    .section-5-owl{
+      display: block;
     }
     .section-1-content-2-bottom{
         display: block;
@@ -1916,7 +2048,9 @@ a{
         padding: 56px 0px 56px 0px;
     }
     .section-11-head h2{
-        font-size: 2.5rem;
+        font-size: 56px;
+        line-height: 64px;
+        font-weight: 700;
         margin-bottom: 2.5rem;
     }
     .section-11-cards{
@@ -1938,13 +2072,14 @@ a{
       transform: scale(0.9) translateZ(0);
     }
     .section-11-cards button img{
-        width: 100%;
+        width: 65%;
         z-index: 2;
         position: absolute;
         height: 100%;
         transition: .4s;
         inset: 0;
         object-fit: contain;
+        margin: 0 auto;
     }
     /* linear gradien section 11 */
     .mouse-cursor-gradient-tracking {

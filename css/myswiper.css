@@ -54,15 +54,15 @@
   }
   @media only screen and (max-width:1300px){
     .swiper-wrapper {
-      margin: 0 0 0 7.1%;
+      margin: 0 0 0 6%;
     }
   }
   @media only screen and (max-width:1200px){
     .swiper-wrapper {
-      margin: 0 0 0 7.4%;
+      margin: 0 0 0 5.5%;
     }
   }
-  @media only screen and (max-width:800px){
+  @media only screen and (max-width:990px){
     .swiperr-wrapper {
       margin: 0 0px;
     }
@@ -79,7 +79,7 @@
     }
   }
   
-  @media only screen and (max-width:650px){
+  @media only screen and (max-width:820px){
     .swiper-wrapper {
       position: relative;
       width: 100%;
