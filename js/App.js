@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 
     // input mask
-    $("#a").mask("+994 ( 88 ) 888 - 88 - 88")
+    // $("#a").mask("+994 ( 88 ) 888 - 88 - 88")
 
 
 

@@ -37,7 +37,7 @@
     height: 100%;
     z-index: 1;
     display: flex;
-    margin-left: 7%;
+    margin-left: calc(5% + 40px);
     cursor: grabbing !important;
     transition-property: transform;
     box-sizing: content-box;
