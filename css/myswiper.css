@@ -54,12 +54,12 @@
   }
   @media only screen and (max-width:1300px){
     .swiper-wrapper {
-      margin: 0 0 0 6%;
+      margin-left: calc(3% + 30px);
     }
   }
   @media only screen and (max-width:1200px){
     .swiper-wrapper {
-      margin: 0 0 0 5.5%;
+      margin-left: calc(3% + 30px);
     }
   }
   @media only screen and (max-width:990px){
@@ -71,7 +71,7 @@
       width: 100%;
       height: 100%;
       z-index: 1;
-      margin: 0 0 0 2% !important;
+      margin-left: calc(3% + 20px);
       display: flex;
       transition-property: transform;
       box-sizing: content-box;
