@@ -1217,6 +1217,7 @@ a{
 .section-7-head h2{
     font-size: 32px;
     color: #fff;
+    padding-left: 19px;
     line-height: 40px;
     margin-left: 70px;
     margin-bottom: 36px;
@@ -1319,6 +1320,7 @@ a{
     padding: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 .section-8-left-side{
     width: 49%;
@@ -1366,14 +1368,21 @@ a{
     justify-content: end;
 }
 .section-8-right-side img{
-    width: 70%;
-    height: 450px;
-    object-fit: cover;
+    width: 100%;
+    /* margin-left: auto; */
+    object-fit: contain;
 }
+/* .sec-8-right-img{
+  margin-left: auto;
+  width: 100%;
+  background: url("../img/okmedia-wp-2.png") center/cover no-repeat;
+  background-size: 100%;
+  height: 450px;
+} */
 .section-8-right-side p{
     /* margin-top: 24px;
     margin-left: 20px; */
-    width: 60%;
+    width: 80%;
     padding-top: 20px;
     margin: 0 auto;
     line-height: 22px;
@@ -1406,7 +1415,7 @@ a{
     }
     .section-8-right-side img{
         width: 100%;
-        height: 300px;
+        /* height: 300px; */
     }
     .section-8-right-side p{
         margin-top: 24px;
@@ -1452,6 +1461,7 @@ a{
     }
     .section-8-right-side img{
         width: 60%;
+        margin: 0 auto;
         object-fit: contain;
         height: inherit;
     }
@@ -1463,7 +1473,9 @@ a{
 }
 @media only screen and (max-width:800px){
     .section-8-right-side img{
-        width: 80%;
+        width: 60%;
+        margin: 0 auto;
+        min-width: 350px;
         object-fit: contain;
         height: inherit;
     }
@@ -1474,8 +1486,9 @@ a{
         margin: 20px 0;
     }
     .section-8-right-side img{
-        width: 100%;
-        height: 290px;
+        /* width: 100%;
+        height: 290px; */
+        min-width: 180px;
         object-fit: cover;
     }
 }
@@ -2303,7 +2316,7 @@ input:not(:focus):valid ~ .floating-label */
     background-color: #000;
      }
       /* section 12 responsive */
-      @media only screen and (max-width:1130px){
+      @media only screen and (max-width:1150px){
         .call-back-ok {
           padding: 18px 10px;
         }

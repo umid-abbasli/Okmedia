@@ -37,7 +37,7 @@
     height: 100%;
     z-index: 1;
     display: flex;
-    margin-left: calc(5% + 40px);
+    margin-left: calc(5% + 30px);
     cursor: grabbing !important;
     transition-property: transform;
     box-sizing: content-box;
@@ -54,12 +54,12 @@
   }
   @media only screen and (max-width:1300px){
     .swiper-wrapper {
-      margin: 0 0 0 6%;
+      /* margin: 0 0 0 6%; */
     }
   }
   @media only screen and (max-width:1200px){
     .swiper-wrapper {
-      margin: 0 0 0 5.5%;
+      /* margin: 0 0 0 5.5%; */
     }
   }
   @media only screen and (max-width:990px){

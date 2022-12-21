@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/my.boostrap.css">
+    <link rel="stylesheet" href="/css/myboostrap.css">
     <link rel="stylesheet" href="/css/myswiper.css">
     <link rel="stylesheet" href="/css/myaos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    <link rel="stylesheet" href="css/myowll.css"
         integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/reset.css">
@@ -16,8 +16,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/myswiperbundle.js"></script>
+    <script src="/js/myajax.js"></script>
     <title>Document</title>
 </head>
 
@@ -857,7 +857,9 @@
                         </div>
                     </div>
                     <div data-aos="fade-up" class="section-8-right-side">
-                        <img src="/img/okmedia-wp-2.png" alt="">
+                        <!-- <div class="sec-8-right-img"> -->
+                            <img src="/img/okmedia-wp-2.png" alt="">
+                        <!-- </div> -->
                         <p>Üçüncü tərəf şirkətlərdən və şəxslərdən asılılığınızı minimuma endiririk</p>
                     </div>
                 </div>
@@ -974,7 +976,7 @@
                         </ul>
                     </div>
                     <div class="section-5-buttons-2">
-                        <div data-aos="fade-up" class="owl-carousel owl-list owl-theme">
+                        <div data-aos="fade-up" class="owl-carousel owl-caru owl-theme">
                             <div class="item section-5-button-bg">Bütün mövzular</div>
                             <div class="item">İş qurma və sahibkarlıq</div>
                             <div class="item">Marketinq</div>
@@ -1261,10 +1263,10 @@
         AOS.init({ once: true });
     </script>
     <script src="/js/myswiper.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    <script src="/js/mycloadowl.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://kit.fontawesome.com/3b1c8e27c3.js" crossorigin="anonymous"></script>
+    <script src="/js/myfontawasome.js" crossorigin="anonymous"></script>
     <script src="/js/myboostrap.js"></script>
     <script src="/js/App.js"></script>
     <script>
@@ -1291,9 +1293,9 @@
             }
         })
     </script>
-    <script>
+    <!-- <script>
         $('.owl-caru').owlCarousel({
-            loop: false,
+            loop: true,
             margin: 10,
             nav: true,
             responsive: {
@@ -1314,7 +1316,7 @@
                 },
             }
         })
-    </script>
+    </script> -->
     <script>
         var swiper = new Swiper(".mySwiperr", {
             slidesPerView: 2.5,
