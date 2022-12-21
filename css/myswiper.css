@@ -71,7 +71,7 @@
       width: 100%;
       height: 100%;
       z-index: 1;
-      margin: 0 0 0 5% !important;
+      margin: 0 0 0 2% !important;
       display: flex;
       transition-property: transform;
       box-sizing: content-box;
