@@ -460,12 +460,15 @@ section{
   .imgs-5,.imgs-3{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 0;
-    gap: 30px;
+    margin:0 0 10px 0;
     justify-content: center;
   }
   .imgs-3{
     justify-content: space-evenly;
+    gap: 30px;
+  }
+  .section-1-card{
+    margin: 0 0 10px 0;
   }
   .section-1-card a{
     border-radius: 12px;
@@ -528,7 +531,7 @@ section{
         margin: 0 auto;
         flex-wrap: wrap;
         align-items: center;
-        gap: 20px;
+        /* gap: 20px; */
       }
 }
 @media only screen and (max-width:1100px){
@@ -539,7 +542,7 @@ section{
         margin: 0 auto;
         /* flex-wrap: wrap; */
         align-items: center;
-        gap: 20px;
+        /* gap: 20px; */
       }
 }
 @media only screen and (max-width:877px){
@@ -569,7 +572,7 @@ section{
     }
    
     .section-1-content{
-        gap: 12px;
+        gap: 2px;
         width: 100%;
         flex-wrap: wrap-reverse;
     }
@@ -1442,6 +1445,7 @@ section{
 .section-8-right-side img{
     width: 100%;
     object-fit: contain;
+    border-radius: 10px;
 }
 
 .section-8-right-side p{
