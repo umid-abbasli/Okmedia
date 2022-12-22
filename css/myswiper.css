@@ -54,7 +54,7 @@
   }
   @media only screen and (min-width:1400px){
     .swiper-wrapper {
-      margin-left: 5% !important;
+      margin-left: calc(5% - 5px) !important;
     }
   }
   @media only screen and (min-width:1300px){
