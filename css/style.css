@@ -611,7 +611,7 @@ section{
 .section-2{
     background-color: #fdeeee;
     width: 1310px;
-    margin: 56px auto;
+    margin: 0 auto;
     border-radius: 56px;
     min-height: 50vh;
     padding: 56px 0;
@@ -716,6 +716,9 @@ section{
 }
 /* section 2 end */
 /* section 3  */
+.section-3{
+  padding: 56px 0;
+}
 .section-3-head{
     width: 100%;
     display: flex;
@@ -879,7 +882,7 @@ section{
 }
 .section-5-head h2{
     max-width: 800px;
-    margin-top: 32px;
+    /* margin-top: 32px; */
     margin-bottom: 0px;
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
@@ -926,7 +929,7 @@ section{
     background-color: #eff0f5;
 }
 .section-5-content{
-    padding: 56px 0;
+    padding: 56px 0 0 0;
 }
 .centered-slide{
     text-align: center !important;
