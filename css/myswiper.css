@@ -37,7 +37,7 @@
     height: 100%;
     z-index: 1;
     display: flex;
-    margin-left: 5%;
+    margin-left: 7%;
     cursor: grabbing !important;
     transition-property: transform;
     box-sizing: content-box;
@@ -52,12 +52,17 @@
     transition-property: transform;
     box-sizing: content-box;
   }
-  @media only screen and (min-width:1400px){
+  @media only screen and (max-width:1600px){
     .swiper-wrapper {
-      margin-left: calc(5% - 5px) !important;
+      margin-left: 7% ;
     }
   }
-  @media only screen and (min-width:1300px){
+  @media only screen and (max-width:1470px){
+    .swiper-wrapper {
+      margin-left: calc(5% - 5px) ;
+    }
+  }
+  @media only screen and (max-width:1300px){
     .swiper-wrapper {
       margin-left: 5%;
     }

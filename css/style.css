@@ -940,8 +940,8 @@ section{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 500px;
-  min-height: 500px;
+  /* height: 500px;
+  min-height: 500px; */
   padding: 30px;
   overflow: hidden;
 }
@@ -1010,6 +1010,9 @@ section{
     min-height: 500px;
     padding: 30px;
     overflow: hidden;
+  }
+  .swi-bar{
+    height: 27px;
   }
   .swi-all{
     height: 100%;
