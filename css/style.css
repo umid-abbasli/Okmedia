@@ -611,7 +611,7 @@ section{
 .section-2{
     background-color: #fdeeee;
     width: 1310px;
-    margin: 0 auto;
+    margin: 56px auto 0 auto;
     border-radius: 56px;
     min-height: 50vh;
     padding: 56px 0;
