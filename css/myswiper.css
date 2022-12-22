@@ -37,7 +37,7 @@
     height: 100%;
     z-index: 1;
     display: flex;
-    margin-left: calc(3% + 30px);
+    margin-left: 5%;
     cursor: grabbing !important;
     transition-property: transform;
     box-sizing: content-box;
@@ -54,7 +54,7 @@
   }
   @media only screen and (min-width:1400px){
     .swiper-wrapper {
-      margin-left: calc(1% + 30px) !important;
+      margin-left: 5% !important;
     }
   }
   @media only screen and (min-width:1300px){
@@ -64,7 +64,7 @@
   }
   @media only screen and (max-width:1200px){
     .swiper-wrapper {
-      margin-left: calc(2.8% + 0px);
+      margin-left: 5%;
     }
   }
   @media only screen and (max-width:990px){
@@ -76,7 +76,7 @@
       width: 100%;
       height: 100%;
       z-index: 1;
-      margin-left: calc(3% + 20px);
+      margin-left: 5%;
       display: flex;
       transition-property: transform;
       box-sizing: content-box;
