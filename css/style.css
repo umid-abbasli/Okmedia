@@ -247,7 +247,7 @@ a{
       margin-right: 25px;
     }
     .logo img {
-      width: 140px;
+      width: 125px;
     }
     .btn {
       font-size: 14px;
@@ -571,7 +571,7 @@ a{
       width: 400px;
     }
     .imgs-3{
-      gap: 2px;
+      gap: 10px;
     }
     .img-3  .section-1-card a{
       min-height: 105px;
@@ -920,7 +920,7 @@ a{
 .centered-slide{
     text-align: center !important;
 }
-.slider-1-9{
+.slider-1-12{
     visibility: hidden;
     transition: .15s;
 }
@@ -929,7 +929,8 @@ a{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 600px;
+  height: 500px;
+  min-height: 500px;
   padding: 30px;
   overflow: hidden;
 }
@@ -944,6 +945,11 @@ a{
   width: 100%;
   background: url("../img/search-bar-okmedia.svg") center/contain no-repeat;
   background-size: 100%;
+}
+.swi-photo img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 10px 10px;
 }
 .swi-all a{
   position: absolute;
@@ -1064,6 +1070,23 @@ a{
         width: 100%;
         margin: 15px 0;
     }
+}
+@media only screen and (max-width:440px){
+  .swi-head{
+      display: block;
+  }
+  .swi-all-photo{
+    height: 250px;
+    min-height: inherit;
+  }
+  .swi-head-content span{
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      text-align: start;
+      width: 100%;
+      margin: 15px 0;
+  }
 }
 /* section 5 end */
 /* section 6 */

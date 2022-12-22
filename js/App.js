@@ -32,6 +32,9 @@ $(document).ready(function(){
         $(".section-5-buttons > ul > li").on("click", function(e) {
             $(this).addClass("section-5-button-bg").siblings().removeClass("section-5-button-bg");
         });
+        $(".owl-stage > div > div").on("click", function(a) {
+            $(this).addClass("section-5-button-bg").siblings().removeClass("section-5-button-bg");
+        });
     })
     document.getElementById
 
