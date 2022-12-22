@@ -1370,8 +1370,10 @@ section{
     }
 }
 @media only screen and (max-width:450px){
-    .section-7-card{
-    }
+  .section-7-card-head-all{
+    display: inherit;
+    gap: 20px;
+}
 }
 /* section 7 end */
 /* section 8 */
@@ -1669,6 +1671,9 @@ section{
     .section-9{
         padding: 56px 20px;
     }
+    .section-9-head{
+      margin-bottom: 24px;
+  }
     .section-9-head h2{
         text-align: left;
         font-size: 28px;
