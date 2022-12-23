@@ -857,14 +857,14 @@ section{
 }
 @media only screen and (max-width:742px){
     .section-4-cards{
-        justify-content: center;
+        justify-content: space-between;
     }
     .section-4-card-content{
       padding-top: 15px;
     }
     .section-4-card-1,.section-4-card-2{
         min-width: 230px;
-        width: 100%;
+        width: 45%;
         margin-right: 0;
         margin: 30px 0px;
     }
@@ -875,6 +875,14 @@ section{
     .section-4-card-content p{
         font-size: 16px;
     }
+}
+@media only screen and (max-width:600px){
+  .section-4-cards{
+    justify-content: center;
+}
+.section-4-card-1,.section-4-card-2{
+    width: 100%;
+}
 }
 /* section 4 end */
 /* section-5 */
@@ -945,14 +953,14 @@ section{
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* height: 500px;
-  min-height: 500px; */
+  height: 500px;
+  min-height: 500px;
   padding: 30px;
   overflow: hidden;
 }
 .swi-all{
-  /* height: 100%;
-  width: 100%; */
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -961,10 +969,6 @@ section{
   width: 100%;
   background: url("../img/search-bar-okmedia.svg") center/contain no-repeat;
   background-size: 100%;
-}
-.swi-photo {
-  /* height: 409px; */
-  height: 90%;
 }
 .swi-photo img{
   width: 100%;
@@ -1006,48 +1010,26 @@ section{
   .okmedia-search-bar{
     object-fit:contain !important;
   }
-  .swi-all-photo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 500px;
-    min-height: 500px;
-    padding: 30px;
-    overflow: hidden;
-  }
   .swi-bar{
-    height: 27px;
+    height: 24px;
   }
-  .swi-all{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  .swi-photo img{
-    width: 100%;
-    height: 100%;
-    border-radius: 0 0 10px 10px;
+  .swi-photo{
+    height: 93%;
   }
 }
 @media only screen and (max-width:1050px){
+  .swi-all-photo{
+    height: 400px;
+    min-height: 400px;
+}
 .okmedia-search-bar{
   top: -5px;
 }
-.swi-all-photo{
-  height: 410px;
-  min-height: 400px;
-  padding: 30px;
+.swi-bar{
+  height: 24px;
 }
-.swi-all{
-  height: 100%;
-  width: 100%;
-}
-.swi-photo img{
-  width: 100%;
-  height: 100%;
-  border-radius: 0 0 10px 10px;
+.swi-photo{
+  height: 94%;
 }
 
 }
@@ -1078,7 +1060,6 @@ section{
     .section-5-head h2{
         font-size: 25px;
         margin: 15px 0;
-        line-height: 29px;
         /* padding: 0 20px; */
     }
     .section-5-buttons ul li,.item {
@@ -1097,22 +1078,19 @@ section{
       object-fit:contain !important;
     }
     .swi-all-photo{
-      height: 360px;
-      min-height: 360px;
-      padding: 10px;
-    }
-    .swi-bar{
-      height: 19px;
-    }
-    .swi-all{
-      height: 95%;
+      height: inherit;
+      min-height: inherit;
     }
     .swi-photo{
-      height: 94%;
+      height: inherit;
     }
-    .section-5-content {
-      padding: 30px 0;
-  }
+    .swi-all a{
+      position: inherit;
+      width: fit-content;
+      margin-top: 10px;
+      left: inherit;
+      bottom: inherit;
+    }
 }
 @media only screen and (max-width:650px){
   .okmedia-search-bar{
@@ -1121,21 +1099,13 @@ section{
   .swi-bar{
     height: 14px;
   }
-  .swi-photo{
-    height: 95%;
-  }
-  .swi-photo img{
-    object-fit: cover;
-  }
+
 }
 @media only screen and (max-width:540px){
     .swi-head{
         display: block;
     }
-    .swi-all-photo{
-      height: 383px;
-      min-height: 384px;
-    }
+
     .swi-head-content span{
         font-size: 14px;
         line-height: 20px;
@@ -1144,11 +1114,6 @@ section{
         width: 100%;
         margin: 15px 0;
     }
-    .swi-all a {
-      left: 3%;
-      padding: 12px 16px;
-      font-size: 13px;
-  }
 }
 
 /* section 5 end */
@@ -1376,6 +1341,9 @@ section{
     .section-7-head h2{
     margin-left:  0;
     }
+    .section-7-card-content p{
+      font-size: 14px;
+  }
 }
 @media only screen and (max-width:450px){
   .section-7-card-head-all{
@@ -1383,10 +1351,13 @@ section{
     gap: 20px;
 }
 .section-7{
-  padding: 30px 17px 30px 17px;
+  padding: 30px 0px 30px 17px;
+}
+.section-7-head h2{
+  padding: 0 17px 0 0;
 }
 .sec-7-card{
-  padding: 0px;
+  padding: 8px;
 }
 }
 /* section 7 end */
@@ -1549,6 +1520,12 @@ section{
         object-fit: contain;
         height: inherit;
     }
+    .section-8-left-side-head h2,.section-8-left-side-head-none h2{
+      line-height: 40px;
+      font-size: 32px;
+      margin: 25px auto 20px;
+      max-width: 600px;
+  }
 }
 @media only screen and (max-width:550px){
   .section-8{
@@ -1636,6 +1613,7 @@ section{
   overflow: hidden;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .grid-item{
   max-width: 170px;
@@ -1774,32 +1752,21 @@ section{
     width: 100%;
     border-radius: 20px;
     padding: 20px 40px;
-    gap: 15px;
     grid-template-columns: auto auto auto  ;
 }
-.grid-item{
-  min-width: 130px;
+.grid-img,.grid-img-1,.grid-img-2{
+  height: 130px;
+  width: 130px;
 }
-.grid-img{
-  height: 120px;
-  width: 120px;
-}
-.grid-img-1{
-  height: 80px;
-  width: 80px;
-}
-.grid-img-2{
-  height: 100px;
-  width: 100px;
-}
-.sec-9-m-t{
-    margin-top: 5px;
-  }
-  .sec-9-mt-2{
-    margin-top: 30px;
+
+  .sec-9-m-t,.sec-9-mt-2,.sec-9-mt-3{
+    margin-top: 0px;
   }
 }
 @media only screen and (max-width:600px){
+  .section-9{
+    padding: 56px 0;
+  }
     .section-9-cards{
         display: inherit;
     }
@@ -1825,31 +1792,10 @@ section{
       width: 100%;
       border-radius: 20px;
       padding: 18px;
-      gap: 15px;
       grid-template-columns: auto auto auto  ;
-      justify-content: space-evenly;
+      justify-content: space-between;
   }
-  .grid-item{
-    min-width: 100px;
-  }
-  .grid-img{
-    height: 90px;
-    width: 90px;
-  }
-  .grid-img-1{
-    height: 80px;
-    width: 80px;
-  }
-  .grid-img-2{
-    height: 70px;
-    width: 70px;
-  }
-  .sec-9-m-t{
-      margin-top: 5px;
-    }
-    .sec-9-mt-2{
-      margin-top: 30px;
-    }
+
 }
 @media only screen and (max-width:490px){
     .section-9-head h2{
@@ -1864,30 +1810,16 @@ section{
       border-radius: 20px;
       padding: 18px;
       gap: 15px;
-      grid-template-columns: auto auto   ;
-      justify-content: space-evenly;
+      grid-template-columns: auto auto ;
   }
   .grid-item{
-    max-width: 120px;
+    min-width: 135px;
   }
-  .grid-img{
-    height: 120px;
-    width: 120px;
+  .grid-img,.grid-img-1,.grid-img-2{
+    height: 135px;
+    width: 135px;
   }
-  .grid-img-1{
-    height: 110px;
-    width: 110px;
-  }
-  .grid-img-2{
-    height: 90px;
-    width: 90px;
-  }
-  .sec-9-m-t{
-      margin-top: 5px;
-    }
-    .sec-9-mt-2{
-      margin-top: 30px;
-    }
+
 }
 @media only screen and (max-width:390px){
   .section-9-card-2{
@@ -1896,30 +1828,10 @@ section{
     border-radius: 20px;
     padding: 18px;
     gap: 30px;
-    grid-template-columns: auto  ;
-    justify-content: space-evenly;
+    grid-template-columns: auto;
+    justify-content: center;
 }
-.grid-item{
-  min-width: 140px;
-}
-.grid-img{
-  height: 130px;
-  width: 130px;
-}
-.grid-img-1{
-  height: 120px;
-  width: 120px;
-}
-.grid-img-2{
-  height: 110px;
-  width: 110px;
-}
-.sec-9-m-t{
-    margin-top: 5px;
-  }
-  .sec-9-mt-2{
-    margin-top: 30px;
-  }
+
 }
 /* section 9 end */
 .section-10{
@@ -2016,7 +1928,7 @@ section{
     display: none;
 }
 /* section 10 responsive */
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1100px){
     .sc-10-c-2-top-1 h2{
         line-height: 1.3em;
         font-family: "okmediafont-bold";
@@ -2117,6 +2029,11 @@ section{
     .sec-10-stabil-width{
         min-width: 280px ;
     }
+}
+@media only screen and (max-width:800px){
+  .section-10-content-1{
+    margin: 20px 0 ;
+  }
 }
 @media only screen and (max-width:400px){
   .section-10-content-1{
@@ -2229,6 +2146,9 @@ section{
         inset: 0;
         object-fit: contain;
         margin: 0 auto;
+    }
+    .big-references{
+      width: 85% !important;
     }
     /* linear gradien section 11 */
     .mouse-cursor-gradient-tracking {
