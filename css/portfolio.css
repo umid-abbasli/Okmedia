@@ -1,0 +1,9 @@
+.portfolio-section-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.swiper-slide{
+    width: 45% !important;
+    margin: 30px 10px;
+}

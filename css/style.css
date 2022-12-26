@@ -41,7 +41,27 @@ section{
         width: 90%;
     }
 }
-
+.animated-navbar-fixed{
+  position: fixed;
+  animation-name: fixed-slidedown;
+  animation-duration: .4s;
+  animation-delay: 0.07s;
+  animation-fill-mode: forwards;
+  top:-100px;
+  width: 96%;
+  z-index: 100;
+  left: 2%;
+  box-shadow: 0 2px 25px rgb(0 0 0 / 5%);
+  background-color: rgba(255, 255, 255, 0.919);
+}
+@keyframes fixed-slidedown{
+  0%{top:-100px; width: 96%;}
+  100%{top:0;background-color: rgba(255, 255, 255, 1);width: 100%;left: 0;}
+}
+/* @keyframes fixed-slidedup{
+  0%{top: 0;background-color: rgba(255, 255, 255, 1);}
+  100%{top:50px; background-color: transparent;}
+} */
 .navbar {
   padding: 27px 60px;
   display: flex;
@@ -246,6 +266,113 @@ section{
     display: none;
 }
 /* navbar and haburger menu responsive */
+/* notafication */
+.notafication{
+  position: relative;
+  display: inline-block;
+  padding: 0 1px;
+  width: 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.notafi-icon{
+  /* padding: 30px 0 30px 0; */
+}
+.notafi-icon i{
+  font-size: 19px;
+  animation-name: bildiris;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode:both;
+  animation-iteration-count: infinite;
+  transform: rotateZ(0deg);
+  /* position: absolute;
+  left: 0 ;
+  top: 0; */
+
+}
+@keyframes bildiris{
+  0%{transform: rotateZ(0deg);}
+  10%{ transform: rotateZ(45deg);margin-bottom: 10px;}
+  20%{ transform: rotateZ(-45deg);margin-bottom: 10px;}
+  30%{ transform: rotateZ(45deg);margin-bottom: 10px;}
+  40%{ transform: rotateZ(-45deg);margin-bottom: 10px;}
+  50%{ transform: rotateZ(0deg);margin-bottom: 0px;}
+  100%{ transform: rotateZ(0deg);margin-bottom: 0px;}
+}
+.notafication-number{
+  position: absolute;
+  right: -6px;
+  top: 13px;
+  z-index: 10;
+  display: flex;
+  /* display: none; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 12px;
+  visibility: hidden;
+  background: #ff0b2e;
+  color: #fff;
+  padding: 2px 5px;
+  animation-name: bildirisNumber;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode:both;
+  animation-iteration-count: infinite;
+}
+@keyframes bildirisNumber{
+  0%{top:13px;visibility: hidden;}
+  10%{ top:7px;visibility: visible;}
+  20%{ top:7px;display: block;}
+  30%{ top:7px;display: block;}
+  40%{ top:7px;display: block;}
+  50%{ top:13px;display: block;}
+  100%{ top:13px;display: block;}
+}
+.notafication-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0 2px 4px rgb(45 75 162 / 2%), 0 6px 24px rgb(45 75 162 / 12%);
+  border-radius: 8px;
+  transition: all 0.2s;
+  /* width: 100%; */
+  /* text-align: center; */
+  min-width: 286px;
+  background-color: #fff;
+  padding: 12px 5px;
+  margin: 0px 0;
+  z-index: 3;
+  top: 60px;
+}
+/* .natafication:hover .notafication-content {
+  display: block;
+} */
+.notafi-card{
+  margin: 0 3px ;
+  padding: 0 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.notafi-card-text{
+  width: 80%;
+}
+.notafi-card-text h3{
+  font-size: 17px;
+  padding: 0 0 3px 0;
+}
+.notafi-card-text p{
+  font-size: 13px;
+  line-height: 17px;
+}
+.notafi-card-img img{
+  filter: invert(0.3);
+}
+
+
 @media only screen and (max-width: 1159px) {
     .logo {
       margin-right: 25px;
@@ -294,14 +421,14 @@ section{
       background-color: #fff;
       align-items: center;
       width: 100%;
-      padding: 29px 25px;
+      padding: 17px 25px;
       box-shadow: 0 2px 25px rgb(0 0 0 / 5%);
     }
     .all-section-with-hamburger {
       position: relative;
     }
     .logo {
-      margin: 0 0 0 30%;
+      margin: 0 0 0 16%;
     }
     .logo img{
       width: 100px;
@@ -312,9 +439,9 @@ section{
       padding: 8px 20px;
       background-color: #fff;
       width: 100%;
-      height: 81vh;
+      /* height: 65vh; */
       display: none;
-      top:89px;
+      top:81px;
     }
     .hamburger-elaqe {
       margin: 42px 0;
@@ -333,6 +460,13 @@ section{
       width: 100%;
       text-align: center;
     }
+    .hamburger-elaqe a:nth-last-of-type(1) {
+      background: #23bc6a;
+    }
+    .hamburger-elaqe a:nth-last-of-type(1):hover {
+      background: #000 !important;
+      color: #fff !important;
+    }
     .hamburger-elaqe a:hover{
       background-color: #d4d4dd !important;
       color: #000 !important;
@@ -350,7 +484,7 @@ section{
       font-size: 20px;
       color: #000;
     }
-    .accordion-a{
+    .accordion-body li{
       margin-left: 25px;
     }
     .hamburger-content ul li button {
@@ -407,6 +541,17 @@ section{
       transition: all 0.2s;
       font-size: 16px;
       cursor: pointer;
+    }
+    .notafication-content {
+      min-width: 226px;
+      left: -230px;
+      top: 50px;
+    }
+  }
+  @media only screen and (max-width:350px){
+    .notafication-content {
+      min-width: 220px;
+      left: -170px;
     }
   }
   /* hamburger menu and navbar responsive end */
@@ -927,6 +1072,7 @@ section{
     background-color: #fff;
     padding: 11px 20px !important;
     text-decoration: none;
+    margin: 10px 15px 10px 0;
     cursor: pointer;
     color: #000 ;
     text-align: center;
@@ -1067,6 +1213,7 @@ section{
       padding: 11px 0px !important;
       white-space: nowrap;
       cursor: pointer;
+      margin: 0 15px 0 0;
       color: #000 ;
       text-align: center;
       font-size: 14px;
@@ -1099,13 +1246,18 @@ section{
   .swi-bar{
     height: 14px;
   }
+  .swi-all-photo{
+    padding: 14px;
+  }
 
 }
 @media only screen and (max-width:540px){
     .swi-head{
         display: block;
     }
-
+    .swi-all-photo{
+      padding: 14px;
+    }
     .swi-head-content span{
         font-size: 14px;
         line-height: 20px;
@@ -1330,7 +1482,7 @@ section{
 }
 @media only screen and (max-width:750px){
     .section-7{
-        padding: 56px 20px 56px 20px;
+        padding: 56px 0px 56px 20px;
     }
     .section-7-card{
         overflow: hidden;
@@ -1585,7 +1737,7 @@ section{
     text-align: left;
     font-size: 32px;
     line-height: 42px;
-    margin-bottom: 15px;
+    margin-bottom: 55px;
 }
 .section-9-card-1 p{
     text-align: left;
@@ -1641,10 +1793,10 @@ section{
   object-fit: cover;
 }
   .sec-9-m-t{
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .sec-9-mt-2{
-    margin-top: 40px;
+    margin-top: 0px;
   }
   .sec-9-mt-3{
     margin-top: 60px;
@@ -1849,7 +2001,16 @@ section{
     margin: 0 0 20px 0;
     flex-wrap: wrap;
 }
-
+/* .hovered-blog{
+  transition: 2s !important;
+  opacity: 1 !important;
+} */
+.hovered-blog:hover h2{
+  opacity: 0.6 !important;
+}
+.hovered-blog:hover p{
+  opacity: 0.6 !important;
+}
 .section-10-head a{
     font-weight: 600;
     font-size: 16px;
@@ -1885,10 +2046,12 @@ section{
     margin-bottom: 16px;
     line-height: 1.3em;
     font-size: 32px;
+    color: #000;
 }
 .section-10-content-1 p{
     line-height: 1.3em;
     font-size: 18px;
+    color: #000;
 }
 .section-10-content-2{
     max-width: 55%;
@@ -1904,12 +2067,14 @@ section{
     font-family: "okmediafont-bold";
     font-size: 24px;
     width: 80%;
+    color: #000;
     margin-bottom: 12px;
 }
 .sc-10-c-2-top-1 p{
     line-height: 1.3em;
     font-size: 18px;
     width: 100%;
+    color: #000;
 }
 .sc-10-c-2-top-2 img{
     width: 161px;
@@ -2150,6 +2315,12 @@ section{
     .big-references{
       width: 85% !important;
     }
+    .smalled-references{
+      width: 40% !important;
+    }
+    .smalled-references-lite{
+      width: 55% !important;
+    }
     /* linear gradien section 11 */
     .mouse-cursor-gradient-tracking {
         position: relative;
@@ -2220,7 +2391,7 @@ section{
           justify-content: space-between;
         }
         .section-11-cards button{
-          min-width: 170px;
+          min-width: 125px;
           padding: 5px 0;
           margin: 10px auto;
         }
@@ -2524,7 +2695,7 @@ input:not(:focus):valid ~ .floating-label */
         height: 48px;
         display: flex;
         border-radius: 18px;
-        margin-right: 10px;
+        margin-right: 16px;
         text-align: center;
         flex-direction: column;
         /* justify-content: center; */
