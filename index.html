@@ -79,6 +79,10 @@
                         </div>
                     </div>
                 </div>
+                
+            <a href="#section-12-content" type="button" data-bs-target="#exampleModal">
+                <q>Qiymət təklifi al</q>
+            </a>
             </div>
             <div class="nav-elaqe">
                 <a href="tel:">+99455 585 75 35</a>
@@ -338,15 +342,15 @@
                 </div>
                 <div class="section-5-buttons">
                     <ul data-aos="fade-up">
-                        <li class="section-5-button-bg">Bütün sektorlar</li>
-                        <li>İnşaat</li>
-                        <li>Tibb</li>
-                        <li>Pərakəndə</li>
-                        <li>Turizm</li>
-                        <li>Aqro</li>
-                        <li>Logistika</li>
-                        <li>Reklam</li>
-                        <li>Digər</li>
+                        <li class="section-5-button-bg butun">Bütün sektorlar</li>
+                        <li class="insaat" onclick="insaat()">İnşaat</li>
+                        <li class="tibb">Tibb</li>
+                        <li class="perakende">Pərakəndə</li>
+                        <li class="turizm">Turizm</li>
+                        <li class="aqro">Aqro</li>
+                        <li class="logistika">Logistika</li>
+                        <li class="reklam">Reklam</li>
+                        <li class="diger">Digər</li>
                     </ul>
                 </div>
                 <div data-aos="fade-up" class="section-5-buttons-2">
@@ -369,8 +373,8 @@
 
                 <div class="mycontainer-swi">
                     <div class="swiper mySwiper">
-                        <div class="swiper-wrapper centered-slide">
-                            <div class="swiper-slide">
+                        <div class="swiper-wrapper index-all-slides-1 centered-slide">
+                            <div class="swiper-slide ">
                                 <div class="swi-all-photo">
                                     <div class="swi-all">
                                         <div class="swi-bar">
@@ -384,7 +388,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide insaat">
                                 <div class="swi-all-photo">
                                     <div class="swi-all">
                                         <div class="swi-bar">
@@ -541,6 +545,22 @@
                         </div>
                     </div>
                 </div>
+                <script>
+                    let indexAllSlides1 = document.querySelectorAll('.index-all-slides-1')
+                    console.log(indexAllSlides1);
+                    let insaatButton = document.querySelector('.insaat')
+                    let insaatt = document.querySelectorAll('.insaat')
+                    function insaat() {
+                        Array.from(insaatt).forEach(insaatslice => {
+                            // insaatslice.classList.remove('insaat')
+                            console.log('insaat olanlari tapdi');
+                        })
+                        indexAllSlides1.forEach(element => {
+                            if (!element.classList.contains('insaat') ) element.remove();
+                        });
+                    }
+
+                </script>
                 <div class="section-5-navigation">
                     <div class="swiper-button-prevv"><button><i class="fa-solid fa-chevron-left"></i></button></div>
                     <div class="swiper-pagination"></div>
@@ -961,62 +981,62 @@
                     <div class="section-9-card-2" data-aos="fade-up">
                         <div class="grid-item sec-9-m-t">
                             <div class="grid-img">
-                                <img src="https://gb.ru/_nuxt/img/9ac0e82.png" alt="">
+                                <img src="/img/il.JPG" alt="">
                             </div>
                         </div>
                         <div class="grid-item">
                             <div class="grid-img-1">
-                                <img src="https://gb.ru/_nuxt/img/ad7fda8.png" alt="">
+                                <img src="/img/miro.JPG" alt="">
                             </div>
                         </div>
                         <div class="grid-item sec-9-mt-2">
                             <div class="grid-img ">
-                                <img src="https://gb.ru/_nuxt/img/ad7fda8.png" alt="">
+                                <img src="/img/cevo.JPG" alt="">
                             </div>
                         </div>
                         <div class="grid-item ">
                             <div class="grid-img-2 ">
-                                <img src="https://gb.ru/_nuxt/img/9ac0e82.png" alt="">
+                                <img src="/img/efso.JPG" alt="">
                             </div>
                         </div>
                         <div class="grid-item sec-9-mt-3">
                             <div class="grid-img-1">
-                                <img src="https://gb.ru/_nuxt/img/ad7fda8.png" alt="">
+                                <img src="/img/elshi.JPG" alt="">
                             </div>
                         </div>
                         <div class="grid-item">
                             <div class="grid-img">
-                                <img src="https://gb.ru/_nuxt/img/9ac0e82.png" alt="">
+                                <img src="/img/gul.JPG" alt="">
                             </div>
                         </div>
                         <div class="grid-item sec-9-mt-3">
                             <div class="grid-img-2  ">
-                                <img src="https://gb.ru/_nuxt/img/ad7fda8.png" alt="">
+                                <img src="/img/umdi.JPG" alt="">
                             </div>
                         </div>
                         <div class="grid-item">
                             <div class="grid-img">
-                                <img src="https://gb.ru/_nuxt/img/9ac0e82.png" alt="">
+                                <img src="/img/cevo.JPG" alt="">
                             </div>
                         </div>
                         <div class="grid-item">
                             <div class="grid-img">
-                                <img src="https://gb.ru/_nuxt/img/ad7fda8.png" alt="">
+                                <img src="/img/miro.JPG" alt="">
                             </div>
                         </div>
                         <div class="grid-item">
                             <div class="grid-img-1 ">
-                                <img src="https://gb.ru/_nuxt/img/9ac0e82.png" alt="">
+                                <img src="/img/il.JPG" alt="">
                             </div>
                         </div>
                         <div class="grid-item sec-9-mt-3">
                             <div class="grid-img-2 ">
-                                <img src="https://gb.ru/_nuxt/img/9ac0e82.png" alt="">
+                                <img src="/img/gul.JPG" alt="">
                             </div>
                         </div>
                         <div class="grid-item">
                             <div class="grid-img">
-                                <img src="https://gb.ru/_nuxt/img/9ac0e82.png" alt="">
+                                <img src="/img/efso.JPG" alt="">
                             </div>
                         </div>
                         <!-- <ul>

@@ -1,9 +1,125 @@
+.slides-showed{
+    display: block;
+}
+.slides-hidden{
+    display: none;
+}
+
+.navbar {
+    padding:16px 60px;
+}
 .portfolio-section-2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.swiper-slide{
-    width: 45% !important;
-    margin: 30px 10px;
+.portfolio-card-1{
+    width: 48%;
+    margin: 20px 10px;
+    min-width: 400px;
+}
+.portfolio-swi-photo img{
+    width: 100%;
+}
+.portfolio-swi-all-photo{
+    background: #f7f7f5;
+    border-radius: 20px;
+    padding: 30px;
+}
+.portfolio-swi-photo img{
+    border-radius: 0 0 10px 10px;
+}
+.static-page-section-3-bg h3{
+    font-size: 25px;
+    padding: 0 0 20px 0;
+}
+.static-page-section-3-bg p{
+    font-size: 17px;
+    line-height: 20px;
+}
+.swi-all a {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 16px;
+    z-index: 3;
+    color: #fff;
+    background-color: #00000085;
+    display: flex;
+    transition: .3s; 
+ }
+ .swi-bar {
+    height: 23px;
+}
+.showmore{
+    text-align: center;
+}
+.showmorebutton{
+    padding: 17px 35px;
+    border-radius: 12px;
+    font-size: 18px;
+    background-color: #23bc6a;
+    color: #fff;
+    border: 1px solid;
+    transition: .2s;
+    cursor: pointer;
+    margin: 20px 0 ;
+}
+@media only screen and (max-width:1120px){
+    .portfolio-card-1{
+        width: 45%;
+        margin: 20px 10px;
+        min-width: 300px;
+    }
+    .swi-bar {
+        height: 17px;
+    }
+}
+@media only screen and (max-width:992px){
+    .portfolio-card-1{
+        width: 47%;
+        margin: 20px 10px;
+        min-width: 300px;
+    }
+    .portfolio-swi-all-photo{
+        background: #f7f7f5;
+        border-radius: 20px;
+        padding: 15px;
+    }
+}
+@media only screen and (max-width:760px){
+    .portfolio-card-1{
+        width: 100%;
+        margin: 20px 10px;
+        min-width: inherit;
+    }
+    .portfolio-swi-all-photo{
+        background: #f7f7f5;
+        border-radius: 20px;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width:400px){
+    .portfolio-swi-all-photo{
+        background: #f7f7f5;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    .swi-all a {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        padding: 9px 12px;
+        border-radius: 8px;
+        font-size: 13px;
+        line-height: 16px;
+        z-index: 3;
+        color: #fff;
+        background-color: #00000085;
+        display: flex;
+        transition: .3s; 
+     }
 }

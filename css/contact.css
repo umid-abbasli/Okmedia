@@ -1,0 +1,33 @@
+.contact-parallax-bg{
+    background: url('../img/ofi.JPG') center/cover fixed;
+    height: 60vh;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+.parallax-bg-content{
+    padding: 0 0 40px 0;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    height: 100%;
+    color: #fff;
+    font-size: 64px;
+    /* font-family: "okmediafont-bold"; */
+}
+.conteact-desc{
+    padding: 24px 0;
+    font-size: 24px;
+    color: #191919;
+    max-width: 600px;
+    line-height: 35px;
+}
+.contact-information{
+    border-top: 1px solid #e4e4e4;
+    padding: 40px 0;
+}
+.contact-information-left-side{
+    font-size: 24px;
+    font-weight: 700;
+    color: #191919;
+}

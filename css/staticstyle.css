@@ -1,5 +1,6 @@
 .navbar{
     box-shadow: 0 2px 25px rgb(0 0 0 / 5%);
+    z-index: 100;
 }
 .static-page-section-1-all{
     padding: 56px 0;
@@ -137,7 +138,7 @@
     }
     .static-page-section-1-right-side-img img{
         width: 60%;
-        max-width: 470px;
+        max-width: 320px;
         margin: 0 auto;
         object-fit: contain;
         min-width: 180px;

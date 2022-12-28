@@ -296,12 +296,12 @@ section{
 }
 @keyframes bildiris{
   0%{transform: rotateZ(0deg);}
-  10%{ transform: rotateZ(45deg);margin-bottom: 10px;}
-  20%{ transform: rotateZ(-45deg);margin-bottom: 10px;}
-  30%{ transform: rotateZ(45deg);margin-bottom: 10px;}
-  40%{ transform: rotateZ(-45deg);margin-bottom: 10px;}
-  50%{ transform: rotateZ(0deg);margin-bottom: 0px;}
-  100%{ transform: rotateZ(0deg);margin-bottom: 0px;}
+  10%{ transform: rotateZ(45deg);}
+  20%{ transform: rotateZ(-45deg);}
+  30%{ transform: rotateZ(45deg);}
+  40%{ transform: rotateZ(-45deg);}
+  50%{ transform: rotateZ(0deg);}
+  100%{ transform: rotateZ(0deg);}
 }
 .notafication-number{
   position: absolute;
@@ -324,14 +324,15 @@ section{
   animation-fill-mode:both;
   animation-iteration-count: infinite;
 }
+
 @keyframes bildirisNumber{
-  0%{top:13px;visibility: hidden;}
-  10%{ top:7px;visibility: visible;}
-  20%{ top:7px;display: block;}
-  30%{ top:7px;display: block;}
-  40%{ top:7px;display: block;}
-  50%{ top:13px;display: block;}
-  100%{ top:13px;display: block;}
+  0%{visibility: hidden;}
+  10%{visibility: visible;}
+  20%{display: block;}
+  30%{display: block;}
+  40%{display: block;}
+  50%{display: block;}
+  100%{display: block;}
 }
 .notafication-content {
   display: none;
@@ -363,6 +364,7 @@ section{
 .notafi-card-text h3{
   font-size: 17px;
   padding: 0 0 3px 0;
+  font-family: "okmediafont-bold";
 }
 .notafi-card-text p{
   font-size: 13px;
@@ -371,7 +373,9 @@ section{
 .notafi-card-img img{
   filter: invert(0.3);
 }
-
+.nav-icons a{
+  display: none;
+}
 
 @media only screen and (max-width: 1159px) {
     .logo {
@@ -546,6 +550,42 @@ section{
       min-width: 226px;
       left: -230px;
       top: 50px;
+    }
+    
+.nav-icons{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-icons a{
+  padding: 17px 35px;
+  border-radius: 12px;
+  font-size: 18px;
+  /* max-height: 53px; */
+  margin-left: 15px;
+  background-color: #23bc6a;
+  color: #fff;
+  border: 1px solid;
+  transition: .2s;
+  display: inline;
+  height: fit-content;
+  cursor: pointer;
+}
+  }
+  @media only screen and (max-width:600px){
+    .nav-icons a{
+      padding: 10px 15px;
+      border-radius: 12px;
+      font-size: 14px;
+      /* max-height: 53px; */
+      margin-left: 15px;
+      background-color: #23bc6a;
+      color: #fff;
+      border: 1px solid;
+      transition: .2s;
+      display: inline;
+      cursor: pointer;
     }
   }
   @media only screen and (max-width:350px){
@@ -1056,7 +1096,7 @@ section{
 }
 .section-5-buttons{
     margin-top: 32px;
-    max-width: 1020px;
+    /* max-width: 1020px; */
 }
 .section-5-buttons ul {
     display: flex;
@@ -1099,8 +1139,8 @@ section{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 500px;
-  min-height: 500px;
+  /* height: 500px; */
+  /* min-height: 500px; */
   padding: 30px;
   overflow: hidden;
 }
@@ -1232,11 +1272,11 @@ section{
       height: inherit;
     }
     .swi-all a{
-      position: inherit;
+      /* position: inher; */
       width: fit-content;
       margin-top: 10px;
-      left: inherit;
-      bottom: inherit;
+      /* left: inherit; */
+      /* bottom: inherit; */
     }
 }
 @media only screen and (max-width:650px){
